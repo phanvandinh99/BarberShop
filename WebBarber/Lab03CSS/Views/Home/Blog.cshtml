@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xu Hướng Kiểu Tóc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .blog-post {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+            .blog-post h2 {
+                color: #333;
+            }
+
+            .blog-post p {
+                color: #666;
+            }
+
+            .blog-post img {
+                width: 100%;
+                border-radius: 8px;
+                margin-top: 10px;
+            }
+
+            .blog-post .author-date {
+                font-size: 0.9em;
+                color: #aaa;
+                margin-top: 10px;
+            }
+
+        .admin-controls {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffe4e1;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <script>// Giả lập trạng thái đăng nhập và phân quyền (chỉ minh họa)
+    const currentUser = {
+      username: 'admin',
+      role: 'admin'  // 'admin' hoặc 'user'
+    };
+
+    function checkPermissions() {
+      // Kiểm tra phân quyền
+      if (currentUser.role === 'admin') {
+        document.getElementById('admin-controls').style.display = 'block';
+      } else {
+        document.getElementById('admin-controls').style.display = 'none';
+      }
+    }
+
+    window.onload = checkPermissions;</script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Xu Hướng Kiểu Tóc 2023</h1>
+
+        <div class="blog-post">
+            <h2>1. Kiểu Tóc Bob Layer</h2>
+            <p>Kiểu tóc bob layer với độ dài ngang cằm đang là xu hướng thịnh hành nhất năm 2023...</p>
+            <div class="author-date">Tác giả: Admin | Ngày đăng: 10/11/2023</div>
+            <img src="link_hinh_anh_1.jpg" alt="Kiểu tóc Bob Layer">
+        </div>
+
+        <div class="blog-post">
+            <h2>2. Kiểu Tóc Xoăn Sóng Nước</h2>
+            <p>Kiểu tóc xoăn sóng nước tạo cảm giác tự nhiên và nhẹ nhàng...</p>
+            <div class="author-date">Tác giả: Admin | Ngày đăng: 05/11/2023</div>
+            <img src="link_hinh_anh_2.jpg" alt="Kiểu tóc Xoăn Sóng Nước">
+        </div>
+
+        <div class="blog-post">
+            <h2>3. Kiểu Tóc Mullet Hiện Đại</h2>
+            <p>Kiểu tóc mullet phong cách hiện đại đã trở lại...</p>
+            <div class="author-date">Tác giả: Admin | Ngày đăng: 01/11/2023</div>
+            <img src="link_hinh_anh_3.jpg" alt="Kiểu tóc Mullet Hiện Đại">
+        </div>
+
+        <!-- Khu vực chỉ dành cho admin -->
+        <div id="admin-controls" class="admin-controls" style="display: none;">
+            <h3>Quản lý nội dung (chỉ dành cho admin)</h3>
+            <button>Thêm bài viết mới</button>
+            <button>Sửa bài viết</button>
+            <button>Xóa bài viết</button>
+        </div>
+    </div>
+
+</body>
+</html>

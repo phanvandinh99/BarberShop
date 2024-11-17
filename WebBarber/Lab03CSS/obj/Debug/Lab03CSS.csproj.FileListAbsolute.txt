@@ -1,0 +1,494 @@
+D:\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll.config
+D:\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll
+D:\Lab03CSS\Lab03CSS\bin\Lab03CSS.pdb
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe.config
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csc.rsp
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe.config
+D:\Lab03CSS\Lab03CSS\bin\roslyn\csi.rsp
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.AppContext.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Console.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Http.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe
+D:\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe.config
+D:\Lab03CSS\Lab03CSS\bin\roslyn\vbc.rsp
+D:\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+D:\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+D:\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.dll
+D:\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lab03CSS\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+D:\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Razor.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+D:\Lab03CSS\Lab03CSS\bin\WebGrease.dll
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.Razor.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+D:\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+D:\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.xml
+D:\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.pdb
+D:\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+D:\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+D:\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CopyComplete
+D:\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.dll
+D:\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.pdb
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll.config
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Lab03CSS.pdb
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe.config
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csc.rsp
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe.config
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\csi.rsp
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.AppContext.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Console.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Http.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe.config
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\vbc.rsp
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Razor.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\WebGrease.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.Razor.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.pdb
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.Up2Date
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.pdb
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\EntityFramework.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\EntityFramework.xml
+C:\Users\PC\source\repos\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll.config
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Lab03CSS.pdb
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe.config
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csc.rsp
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe.config
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\csi.rsp
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.AppContext.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Console.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Http.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe.config
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\vbc.rsp
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\EntityFramework.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Razor.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\WebGrease.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\EntityFramework.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.Razor.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.pdb
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CopyComplete
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.dll
+C:\Users\thien\Downloads\Lab03CSS\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.pdb
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll.config
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Lab03CSS.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Lab03CSS.pdb
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csc.exe.config
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csc.rsp
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csi.exe.config
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\csi.rsp
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.AppContext.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Console.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Http.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\vbc.exe.config
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\vbc.rsp
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\EntityFramework.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Razor.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\WebGrease.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\EntityFramework.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\EntityFramework.SqlServer.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Helpers.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Mvc.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Optimization.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.Razor.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Newtonsoft.Json.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Antlr3.Runtime.pdb
+E:\Download\Code\Lab03CSS\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Download\Code\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+E:\Download\Code\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+E:\Download\Code\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.csproj.Up2Date
+E:\Download\Code\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.dll
+E:\Download\Code\Lab03CSS\Lab03CSS\obj\Debug\Lab03CSS.pdb
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.dll.config
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.pdb
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.exe
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.exe.config
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.rsp
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.exe
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.exe.config
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.rsp
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.AppContext.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Console.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Net.Http.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.exe
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.exe.config
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.rsp
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Antlr3.Runtime.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.SqlServer.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Newtonsoft.Json.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Helpers.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Mvc.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Optimization.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Razor.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\WebGrease.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.SqlServer.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Helpers.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Mvc.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Optimization.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Razor.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Newtonsoft.Json.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Antlr3.Runtime.pdb
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.Up2Date
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.dll
+C:\Users\cak52\Downloads\WebBarrber\WebBarrber\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.pdb
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.dll.config
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Lab03CSS.pdb
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.exe
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.exe.config
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csc.rsp
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.exe
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.exe.config
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\csi.rsp
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.AppContext.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Console.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.Compression.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Net.Http.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.ValueTuple.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.exe
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.exe.config
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\vbc.rsp
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\VBCSCompiler.exe
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Antlr3.Runtime.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.SqlServer.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Newtonsoft.Json.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Helpers.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Mvc.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Optimization.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Razor.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Razor.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\WebGrease.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\EntityFramework.SqlServer.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Helpers.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Mvc.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Optimization.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.Razor.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\System.Web.WebPages.Razor.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Newtonsoft.Json.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Antlr3.Runtime.pdb
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.AssemblyReference.cache
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.CoreCompileInputs.cache
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.csproj.CopyComplete
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.dll
+C:\Users\phanv\OneDrive\Máy tính\WebBarber\WebBarber\Lab03CSS\obj\Debug\Lab03CSS.pdb

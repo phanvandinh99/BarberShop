@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá & Nhận Xét</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .review-container {
+            width: 60%;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .review-list {
+            margin-top: 20px;
+        }
+
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: relative;
+        }
+
+            .review:last-child {
+                border-bottom: none;
+            }
+
+            .review p {
+                color: #666;
+                margin: 5px 0;
+            }
+
+            .review .author-date {
+                font-size: 0.9em;
+                color: #aaa;
+            }
+
+        .delete-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #d9534f;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .add-review {
+            margin-top: 20px;
+        }
+
+            .add-review textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                resize: vertical;
+            }
+
+            .add-review input, .add-review select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .add-review button {
+                background-color: #5cb85c;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+                .add-review button:hover {
+                    background-color: #4cae4c;
+                }
+    </style>
+</head>
+<body>
+
+    <div class="review-container">
+        <h1>Đánh Giá & Nhận Xét</h1>
+
+        <!-- Khu vực hiển thị các nhận xét -->
+        <div class="review-list" id="reviewList">
+            <!-- Các nhận xét sẽ được thêm vào đây -->
+        </div>
+
+        <!-- Form thêm nhận xét mới -->
+        <div class="add-review">
+            <input type="text" id="reviewAuthor" placeholder="Tên của bạn" required>
+            <select id="reviewRole">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <textarea id="reviewContent" rows="4" placeholder="Viết nhận xét của bạn tại đây..." required></textarea>
+            <button onclick="addReview()">Gửi nhận xét</button>
+        </div>
+    </div>
+
+    <script>// Mảng để lưu trữ các nhận xét
+    let reviews = [
+      {
+        author: "Nguyễn Văn A",
+        date: "10/11/2023",
+        content: "Salon rất tuyệt vời, nhân viên thân thiện và kiểu tóc rất hợp ý tôi!",
+        role: "admin"
+      },
+      {
+        author: "Lê Thị B",
+        date: "08/11/2023",
+        content: "Dịch vụ rất chuyên nghiệp, sẽ quay lại lần sau.",
+        role: "user"
+      }
+    ];
+
+    // Hàm hiển thị các nhận xét từ mảng reviews
+    function displayReviews() {
+      const reviewList = document.getElementById("reviewList");
+      reviewList.innerHTML = ""; // Xóa nội dung cũ trước khi thêm mới
+      reviews.forEach((review, index) => {
+        const reviewDiv = document.createElement("div");
+        reviewDiv.className = "review";
+        reviewDiv.innerHTML = `
+          <p>${review.content}</p>
+          <div class="author-date">- ${review.author}, ${review.date} (${review.role})</div>
+        `;
+
+        // Chỉ hiển thị nút xóa nếu người dùng là admin
+        if (review.role === "admin") {
+          const deleteButton = document.createElement("button");
+          deleteButton.className = "delete-button";
+          deleteButton.textContent = "Xóa";
+          deleteButton.onclick = () => deleteReview(index);
+          reviewDiv.appendChild(deleteButton);
+        }
+
+        reviewList.appendChild(reviewDiv);
+      });
+    }
+
+    // Hàm thêm nhận xét mới vào mảng reviews và hiển thị lại
+    function addReview() {
+      const authorInput = document.getElementById("reviewAuthor");
+      const contentInput = document.getElementById("reviewContent");
+      const roleSelect = document.getElementById("reviewRole");
+      const author = authorInput.value.trim();
+      const content = contentInput.value.trim();
+      const role = roleSelect.value;
+
+      if (author && content) {
+        const today = new Date();
+        const date = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
+
+        // Thêm nhận xét mới vào mảng
+        reviews.unshift({
+          author: author,
+          date: date,
+          content: content,
+          role: role
+        });
+
+        // Hiển thị lại các nhận xét
+        displayReviews();
+
+        // Xóa nội dung của form
+        authorInput.value = "";
+        contentInput.value = "";
+      } else {
+        alert("Vui lòng nhập đầy đủ tên và nội dung nhận xét!");
+      }
+    }
+
+    // Hàm xóa nhận xét
+    function deleteReview(index) {
+      reviews.splice(index, 1);
+      displayReviews();
+    }
+
+    // Hiển thị nhận xét khi trang được tải
+    displayReviews();</script>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLBBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ACCOUNT">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password_hash" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="account_type" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="customer_id" Type="int" />
+  </EntityType>
+  <EntityType Name="DICHVU">
+    <Key>
+      <PropertyRef Name="service_id" />
+    </Key>
+    <Property Name="service_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="service_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="duration_minutes" Type="int" Nullable="false" />
+    <Property Name="service_images" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="phone_number" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="notes" Type="text" />
+  </EntityType>
+  <EntityType Name="KHUYENMAI">
+    <Key>
+      <PropertyRef Name="promotion_id" />
+    </Key>
+    <Property Name="promotion_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="promotion_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="description" Type="text" />
+    <Property Name="start_date" Type="date" />
+    <Property Name="end_date" Type="date" />
+  </EntityType>
+  <EntityType Name="KHUYENMAI_DICHVU">
+    <Key>
+      <PropertyRef Name="promotion_service_id" />
+    </Key>
+    <Property Name="promotion_service_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="promotion_id" Type="int" />
+    <Property Name="service_id" Type="int" />
+  </EntityType>
+  <EntityType Name="KHUYENMAI_SANPHAM">
+    <Key>
+      <PropertyRef Name="promotion_product_id" />
+    </Key>
+    <Property Name="promotion_product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="promotion_id" Type="int" />
+    <Property Name="product_id" Type="int" />
+  </EntityType>
+  <EntityType Name="LICHHEN">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+    </Key>
+    <Property Name="appointment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_id" Type="int" />
+    <Property Name="appointment_date" Type="datetime" Nullable="false" />
+    <Property Name="service_id" Type="int" />
+    <Property Name="staff_id" Type="int" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="staff_id" />
+    </Key>
+    <Property Name="staff_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="position" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SANPHAM">
+    <Key>
+      <PropertyRef Name="product_id" />
+    </Key>
+    <Property Name="product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="stock_quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="SANPHAM_LICHHEN">
+    <Key>
+      <PropertyRef Name="appointment_product_id" />
+    </Key>
+    <Property Name="appointment_product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="appointment_id" Type="int" />
+    <Property Name="product_id" Type="int" />
+    <Property Name="quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="THANHTOAN">
+    <Key>
+      <PropertyRef Name="payment_id" />
+    </Key>
+    <Property Name="payment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="appointment_id" Type="int" />
+    <Property Name="amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="payment_method" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__ACCOUNT__custome__5629CD9C">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="0..1" />
+    <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="ACCOUNT">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KHUYENMAI__produ__5165187F">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="0..1" />
+    <End Role="KHUYENMAI_SANPHAM" Type="Self.KHUYENMAI_SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="KHUYENMAI_SANPHAM">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KHUYENMAI__promo__4CA06362">
+    <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+    <End Role="KHUYENMAI_DICHVU" Type="Self.KHUYENMAI_DICHVU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHUYENMAI">
+        <PropertyRef Name="promotion_id" />
+      </Principal>
+      <Dependent Role="KHUYENMAI_DICHVU">
+        <PropertyRef Name="promotion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KHUYENMAI__promo__5070F446">
+    <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+    <End Role="KHUYENMAI_SANPHAM" Type="Self.KHUYENMAI_SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHUYENMAI">
+        <PropertyRef Name="promotion_id" />
+      </Principal>
+      <Dependent Role="KHUYENMAI_SANPHAM">
+        <PropertyRef Name="promotion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KHUYENMAI__servi__4D94879B">
+    <End Role="DICHVU" Type="Self.DICHVU" Multiplicity="0..1" />
+    <End Role="KHUYENMAI_DICHVU" Type="Self.KHUYENMAI_DICHVU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DICHVU">
+        <PropertyRef Name="service_id" />
+      </Principal>
+      <Dependent Role="KHUYENMAI_DICHVU">
+        <PropertyRef Name="service_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LICHHEN__custome__3F466844">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="0..1" />
+    <End Role="LICHHEN" Type="Self.LICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="LICHHEN">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LICHHEN__service__403A8C7D">
+    <End Role="DICHVU" Type="Self.DICHVU" Multiplicity="0..1" />
+    <End Role="LICHHEN" Type="Self.LICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DICHVU">
+        <PropertyRef Name="service_id" />
+      </Principal>
+      <Dependent Role="LICHHEN">
+        <PropertyRef Name="service_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LICHHEN__staff_i__412EB0B6">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+    <End Role="LICHHEN" Type="Self.LICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="staff_id" />
+      </Principal>
+      <Dependent Role="LICHHEN">
+        <PropertyRef Name="staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANPHAM_L__appoi__48CFD27E">
+    <End Role="LICHHEN" Type="Self.LICHHEN" Multiplicity="0..1" />
+    <End Role="SANPHAM_LICHHEN" Type="Self.SANPHAM_LICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LICHHEN">
+        <PropertyRef Name="appointment_id" />
+      </Principal>
+      <Dependent Role="SANPHAM_LICHHEN">
+        <PropertyRef Name="appointment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANPHAM_L__produ__49C3F6B7">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="0..1" />
+    <End Role="SANPHAM_LICHHEN" Type="Self.SANPHAM_LICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="SANPHAM_LICHHEN">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__THANHTOAN__appoi__440B1D61">
+    <End Role="LICHHEN" Type="Self.LICHHEN" Multiplicity="0..1" />
+    <End Role="THANHTOAN" Type="Self.THANHTOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LICHHEN">
+        <PropertyRef Name="appointment_id" />
+      </Principal>
+      <Dependent Role="THANHTOAN">
+        <PropertyRef Name="appointment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLBBModelStoreContainer">
+    <EntitySet Name="ACCOUNT" EntityType="Self.ACCOUNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DICHVU" EntityType="Self.DICHVU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHUYENMAI" EntityType="Self.KHUYENMAI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHUYENMAI_DICHVU" EntityType="Self.KHUYENMAI_DICHVU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHUYENMAI_SANPHAM" EntityType="Self.KHUYENMAI_SANPHAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LICHHEN" EntityType="Self.LICHHEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SANPHAM_LICHHEN" EntityType="Self.SANPHAM_LICHHEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THANHTOAN" EntityType="Self.THANHTOAN" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ACCOUNT__custome__5629CD9C" Association="Self.FK__ACCOUNT__custome__5629CD9C">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KHUYENMAI__produ__5165187F" Association="Self.FK__KHUYENMAI__produ__5165187F">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="KHUYENMAI_SANPHAM" EntitySet="KHUYENMAI_SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KHUYENMAI__promo__4CA06362" Association="Self.FK__KHUYENMAI__promo__4CA06362">
+      <End Role="KHUYENMAI" EntitySet="KHUYENMAI" />
+      <End Role="KHUYENMAI_DICHVU" EntitySet="KHUYENMAI_DICHVU" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KHUYENMAI__promo__5070F446" Association="Self.FK__KHUYENMAI__promo__5070F446">
+      <End Role="KHUYENMAI" EntitySet="KHUYENMAI" />
+      <End Role="KHUYENMAI_SANPHAM" EntitySet="KHUYENMAI_SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KHUYENMAI__servi__4D94879B" Association="Self.FK__KHUYENMAI__servi__4D94879B">
+      <End Role="DICHVU" EntitySet="DICHVU" />
+      <End Role="KHUYENMAI_DICHVU" EntitySet="KHUYENMAI_DICHVU" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LICHHEN__custome__3F466844" Association="Self.FK__LICHHEN__custome__3F466844">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="LICHHEN" EntitySet="LICHHEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LICHHEN__service__403A8C7D" Association="Self.FK__LICHHEN__service__403A8C7D">
+      <End Role="DICHVU" EntitySet="DICHVU" />
+      <End Role="LICHHEN" EntitySet="LICHHEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LICHHEN__staff_i__412EB0B6" Association="Self.FK__LICHHEN__staff_i__412EB0B6">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="LICHHEN" EntitySet="LICHHEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANPHAM_L__appoi__48CFD27E" Association="Self.FK__SANPHAM_L__appoi__48CFD27E">
+      <End Role="LICHHEN" EntitySet="LICHHEN" />
+      <End Role="SANPHAM_LICHHEN" EntitySet="SANPHAM_LICHHEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANPHAM_L__produ__49C3F6B7" Association="Self.FK__SANPHAM_L__produ__49C3F6B7">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="SANPHAM_LICHHEN" EntitySet="SANPHAM_LICHHEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__THANHTOAN__appoi__440B1D61" Association="Self.FK__THANHTOAN__appoi__440B1D61">
+      <End Role="LICHHEN" EntitySet="LICHHEN" />
+      <End Role="THANHTOAN" EntitySet="THANHTOAN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
