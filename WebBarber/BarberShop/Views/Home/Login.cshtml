@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+@model BarberShop.Models.AdminUser
+
+<h2 style="text-align:center; color:#333;">Đăng Nhập</h2>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <div class="login-form">
+        <div class="form-group">
+            <label for="NameUser">Tên Đăng Nhập</label>
+            @Html.TextBoxFor(m => m.NameUser, new { @class = "form-control", placeholder = "Nhập tên đăng nhập" })
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Mật Khẩu</label>
+            @Html.PasswordFor(m => m.PasswordUser, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+        </div>
+        <div class="form-group" style="text-align: center;">
+            <button type="submit" class="btn btn-primary btn-block">Đăng Nhập</button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <p style="color:red; text-align:center;">@ViewBag.ErrorMessage</p>
+        }
+    </div>
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fc;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+
+        background-color:dodgerblue;
+        border: none;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    p {
+        font-size: 14px;
+        color: #ff0000;
+    }
+</style>
