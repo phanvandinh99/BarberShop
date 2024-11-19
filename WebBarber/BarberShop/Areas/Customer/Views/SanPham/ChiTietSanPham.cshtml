@@ -91,7 +91,7 @@
         @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMaSanPham = Model.MaSanPham, @strURL = Request.Url.ToString() }))
         {
             <b for="SoLuong">Số lượng:</b>
-            <input id="SoLuong" name="iSoLuongMua" class="quantity-input" min="1" max="@Model.SoLuong" value="1" type="number">
+            <input id="SoLuong" name="iSoLuongMua" class="quantity-input" min="1" value="1" type="number">
             <br />
             <!-- Button -->
             <button type="submit" class="add-to-cart-btn">Thêm vào giỏ hàng</button>

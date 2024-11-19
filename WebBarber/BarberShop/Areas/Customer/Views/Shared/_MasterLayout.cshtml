@@ -276,6 +276,10 @@
                 background-color: #ff8c00;
             }
 
+        /* Hiển thị thông báo toast*/
+        .toast-top-right {
+            top: 100px !important;
+        }
     </style>
 </head>
 <body>
@@ -362,6 +366,15 @@
                 if (parts.length === 2) {
                     var toastType = parts[0];
                     var message = parts[1];
+
+                    // Cấu hình toastr
+                    toastr.options = {
+                        "positionClass": "toast-top-right", // Vị trí góc trên bên phải
+                        "timeOut": "5000", // Thời gian hiển thị thông báo
+                        "extendedTimeOut": "1000", // Thời gian hiển thị khi hover chuột
+                        "closeButton": true, // Hiển thị nút đóng
+                        "preventDuplicates": true // Ngăn trùng lặp thông báo
+                    };
 
                     switch (toastType) {
                         case 'success':
