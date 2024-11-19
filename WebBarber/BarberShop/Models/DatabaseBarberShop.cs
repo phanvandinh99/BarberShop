@@ -78,10 +78,6 @@ namespace BarberShop.Models
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<LichHen>()
-                .Property(e => e.TaiKhoanNV)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<LichHen>()
                 .Property(e => e.TaiKhoanKH)
                 .IsUnicode(false);
 

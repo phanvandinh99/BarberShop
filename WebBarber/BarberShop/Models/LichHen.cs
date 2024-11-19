@@ -25,7 +25,9 @@ namespace BarberShop.Models
         [StringLength(100)]
         public string HoTen { get; set; }
 
-        public DateTime ThoiGianDat { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string ThoiGianDat { get; set; }
 
         public DateTime NgayDat { get; set; }
 
@@ -45,8 +47,6 @@ namespace BarberShop.Models
         public virtual ChiNhanh ChiNhanh { get; set; }
 
         public virtual KhachHang KhachHang { get; set; }
-
-        public virtual NhanVien NhanVien { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SuDungDichVu> SuDungDichVu { get; set; }

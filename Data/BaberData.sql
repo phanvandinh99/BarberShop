@@ -79,7 +79,7 @@ create table DichVu
 	MaDichVu int identity (1,1) primary key,
 	TenDichVu nvarchar(100) ,
 	DonGia money not null,
-	ThoiGian varchar,
+	ThoiGian varchar(10),
 )
 go
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Cắt Tóc Nam', 70000, 40);
@@ -109,16 +109,15 @@ create table LichHen
 	MaLichHen int identity(1,1) primary key,
 	SDT varchar(10) not null,
 	HoTen nvarchar(100) not null,
-	ThoiGianDat Datetime not null,
+	ThoiGianDat varchar(10) not null,
 	NgayDat Datetime not null,
 	TongTien money null,
 	TrangThai Tinyint not null, -- 0: Đang đặt, 1: Đã duyệt, 2: Đã Hủy, 3: Đã Thanh Toán
 
 	TaiKhoanNV varchar(50),
 	MaChiNhanh int,
-	TaiKhoanKH varchar(50),
+	TaiKhoanKH varchar(50) null,
 
-	foreign key (TaiKhoanNV) references NhanVien(TaiKhoanNV),
 	foreign key (MaChiNhanh) references ChiNhanh(MaChiNhanh),
 	foreign key (TaiKhoanKH) references KhachHang(TaiKhoanKH),
 )

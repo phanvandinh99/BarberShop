@@ -212,7 +212,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\Customer\Views\DatLich\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +224,7 @@
     <Content Include="Areas\Customer\Views\DichVu\Index.cshtml" />
     <Content Include="Areas\Customer\Views\DangNhap\DangNhap.cshtml" />
     <Content Include="Areas\Customer\Views\DangNhap\User_Par.cshtml" />
+    <Content Include="Areas\Customer\Views\DatLich\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
