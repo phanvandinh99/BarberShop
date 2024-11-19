@@ -1,0 +1,195 @@
+﻿@using BarberShop.Models.ViewModels
+@model List<GioHangItems>
+
+@{
+    ViewBag.Title = "Trang Giỏ Hàng";
+    Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    /* Container cho giỏ hàng */
+    .product-list {
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    /* Bảng sản phẩm */
+    .product-details-container {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .product-info {
+        flex: 2;
+    }
+
+    /* Bảng hiển thị thông tin sản phẩm */
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        .product-table th,
+        .product-table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .product-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        .product-table td {
+            font-size: 16px;
+        }
+
+        .product-table input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+
+    /* Button thêm vào giỏ */
+    .add-to-cart-btn {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+        .add-to-cart-btn:hover {
+            background-color: #2980b9;
+        }
+
+    /* Thông tin địa chỉ giao hàng */
+    /* Shipping Address Form */
+    .shipping-details {
+        margin: 30px auto; /* Tạo khoảng cách từ trên và dưới, căn giữa form */
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        width: 80%; /* Giới hạn chiều rộng của form, bạn có thể thay đổi tỷ lệ này */
+        max-width: 600px; /* Đặt chiều rộng tối đa để form không quá rộng */
+        box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến tổng chiều rộng */
+    }
+
+        .shipping-details h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-align: center; /* Căn giữa tiêu đề */
+        }
+
+        .shipping-details input,
+        .shipping-details select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .shipping-details button {
+            padding: 12px 25px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+        }
+
+            .shipping-details button:hover {
+                background-color: #2ecc71;
+            }
+
+
+    /* Nút thanh toán */
+    .btn-payment {
+        padding: 12px 25px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+    }
+
+        .btn-payment:hover {
+            background-color: #2ecc71;
+        }
+</style>
+
+<h1>@ViewBag.Title</h1>
+
+<div class="product-list">
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá bán</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="@Url.Content(item.sHinhAnh)" alt="@item.sTenSanPham" style="max-width: 100px;"></td>
+                    <td>@item.sTenSanPham</td>
+                    <td>@string.Format("{0:0,0}", item.dDonGia) vnđ</td>
+                    <td>
+                        <!-- Nút cập nhật -->
+                        @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { iMaSanPham = item.iMaSanPham, @strURL = Request.Url.ToString() }))
+                        {
+                            <input type="number" value="@item.iSoLuong" min="1" max="100" data-item-id="@item.sTenSanPham" class="update-quantity" name="iSoLuongMua">
+                            <button class="update-btn">Cập nhật</button>
+                        }
+                    </td>
+                    <td>@string.Format("{0:0,0}", item.ThanhTien) vnđ</td>
+                    <td>
+                        <!-- Nút xóa -->
+                        @using (Html.BeginForm("XoaGioHang", "GioHang", new { @iMaSanPham = item.iMaSanPham, @strURL = Request.Url.ToString() }))
+                        {
+                            <button type="submit" class="delete-btn">Xóa</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Shipping Address Form -->
+<div class="shipping-details">
+    <h3>Thông tin địa chỉ giao hàng</h3>
+    @using (Html.BeginForm("DatHang", "GioHang"))
+    {
+        <label for="name">Tên người nhận:</label>
+        <input placeholder="Tên người nhận" value="" type="text" oninvalid="alert('Không Bỏ Trống Tên Người Nhận!');" id="name" required name="txtTenNguoiNhan">
+
+        <label for="phone">Số điện thoại:</label>
+        <input placeholder="Số điện thoại (10 số)" id="phone" value="" oninvalid="alert('Không Bỏ Trống SDT / 10 số!');" type="text" pattern="[0-9]{10}" required name="txtSDT">
+
+        <label for="address">Địa chỉ giao hàng:</label>
+        <input placeholder="vd: 22/6, Lê Duẫn" id="address" oninvalid="alert('Không Bỏ Trống Địa Chỉ Giao Hàng!');" required value="" type="text" name="txtDiaChi">
+
+        <button type="submit" class="btn-payment">Thanh toán</button>
+    }
+</div>

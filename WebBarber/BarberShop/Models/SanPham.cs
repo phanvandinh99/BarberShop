@@ -22,6 +22,9 @@ namespace BarberShop.Models
         [StringLength(200)]
         public string TenSanPham { get; set; }
 
+        [StringLength(255)]
+        public string MoTa { get; set; }
+
         [Column(TypeName = "money")]
         public decimal GiaBan { get; set; }
 

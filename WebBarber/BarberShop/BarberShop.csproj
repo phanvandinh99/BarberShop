@@ -128,7 +128,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Customer\Controllers\DangNhapController.cs" />
+    <Compile Include="Areas\Customer\Controllers\DatLichController.cs" />
+    <Compile Include="Areas\Customer\Controllers\DichVuController.cs" />
+    <Compile Include="Areas\Customer\Controllers\GioHangController.cs" />
     <Compile Include="Areas\Customer\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Customer\Controllers\SanPhamController.cs" />
     <Compile Include="Areas\Customer\CustomerAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -145,6 +150,7 @@
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\SanPham.cs" />
     <Compile Include="Models\SuDungDichVu.cs" />
+    <Compile Include="Models\ViewModels\GioHangItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -206,11 +212,19 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Customer\Views\DatLich\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Customer\Views\Shared\_MasterLayout.cshtml" />
     <Content Include="Areas\Customer\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Customer\Views\SanPham\ChiTietSanPham.cshtml" />
+    <Content Include="Areas\Customer\Views\SanPham\Index.cshtml" />
+    <Content Include="Areas\Customer\Views\GioHang\GioHang.cshtml" />
+    <Content Include="Areas\Customer\Views\GioHang\GioHang_Par.cshtml" />
+    <Content Include="Areas\Customer\Views\DichVu\Index.cshtml" />
+    <Content Include="Areas\Customer\Views\DangNhap\DangNhap.cshtml" />
+    <Content Include="Areas\Customer\Views\DangNhap\User_Par.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

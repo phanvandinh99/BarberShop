@@ -1,8 +1,13 @@
-﻿
+﻿@using BarberShop.Models
 
 @{
     ViewBag.Title = "Trang chủ";
     Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+@{
+    IEnumerable<SanPham> listSanPham = (IEnumerable<SanPham>)ViewBag.SanPham;
+    IEnumerable<DichVu> listDichVu = (IEnumerable<DichVu>)ViewBag.DichVu;
 }
 
 <html>
@@ -21,7 +26,7 @@
             <p>HỆ THỐNG BARBER SHOP HÀNG ĐẦU</p>
             <div class="banner-btn">
                 <a href="~/Home/ĐặtLịch"><span></span>Đặt lịch</a>
-                <a href="#"><span></span>Dịch vụ</a>
+                <a href="~/Customer/DichVu/Index"><span></span>Dịch vụ</a>
             </div>
         </div>
     </section>
@@ -33,6 +38,7 @@
         </div>
         <div class="aboutus-box">
             <div class="aboutus">
+
                 <h1>Nhân viên chuyên nghiệp</h1>
                 <div class="aboutus-desc">
                     <div class="aboutus-icon">
@@ -126,30 +132,24 @@
             <p>SẢN PHẨM</p>
 
             <div class="gallery">
-                <div class="content-pro">
-                    <img class="pic" src="~/Images/Hard-wax.jpg" />
-                    <h2>Hard Wax</h2>
-                    <h6>400.000vnd</h6>
-                    <button class="buy-1"><b>Mua</b></button>
-                </div>
-                <div class="content-pro">
-                    <img class="pic" src="~/Images/Hard-wax.jpg" />
-                    <h2>Hard Wax</h2>
-                    <h6>400.000vnd</h6>
-                    <button class="buy-1"><b>Mua</b></button>
-                </div>
-                <div class="content-pro">
-                    <img class="pic" src="~/Images/Hard-wax.jpg" />
-                    <h2>Hard Wax</h2>
-                    <h6>400.000vnd</h6>
-                    <button class="buy-1"><b>Mua</b></button>
-                </div>
-                <div class="content-pro">
-                    <img class="pic" src="~/Images/Hard-wax.jpg" />
-                    <h2>Hard Wax</h2>
-                    <h6>400.000vnd</h6>
-                    <button class="buy-1"><b>Mua</b></button>
-                </div>
+                @if (listSanPham.Any())
+                {
+                    foreach (var item in listSanPham)
+                    {
+                        <div class="content-pro">
+                            <a href="/Customer/SanPham/ChiTietSanPham?iMaSanPham=@item.MaSanPham" style="text-decoration:none">
+                                <img class="pic" src="~/Images/Hard-wax.jpg" />
+                                <h2>@item.TenSanPham</h2>
+                                <h6>@string.Format("{0:0,0}", item.GiaBan) vnđ</h6>
+                            </a>
+                            @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMaSanPham = item.MaSanPham, @strURL = Request.Url.ToString() }))
+                            {
+                                <input id="SoLuong" name="iSoLuongMua" min="1" value="1" type="number" hidden>
+                                <button type="submit" class="buy-1"><b>Mua</b></button>
+                            }
+                        </div>
+                    }
+                }
             </div>
         </div>
     </section>

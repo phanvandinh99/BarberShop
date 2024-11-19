@@ -32,18 +32,6 @@ namespace BarberShop.Models
         [StringLength(10)]
         public string SDT { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string ThanhPho { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string Quan { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string Phuong { get; set; }
-
         [Column(TypeName = "date")]
         public DateTime? NgayGiao { get; set; }
 

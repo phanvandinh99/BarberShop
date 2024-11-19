@@ -1,7 +1,7 @@
 ﻿using BarberShop.Models;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
@@ -16,10 +16,13 @@ namespace BarberShop.Areas.Customer.Controllers
         {
             try
             {
-                List<SanPham> sanPham = await db.SanPham.ToListAsync();
-                List<DichVu> dichVu = await db.DichVu.ToListAsync();
+                ViewBag.SanPham = await db.SanPham.OrderByDescending(n => n.MaSanPham)
+                                                  .Take(15)
+                                                  .ToListAsync();
 
-                return View(sanPham);
+                ViewBag.DichVu = await db.DichVu.ToListAsync();
+
+                return View();
             }
             catch (Exception ex)
             {

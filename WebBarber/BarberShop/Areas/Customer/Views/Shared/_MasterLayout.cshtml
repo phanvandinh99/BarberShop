@@ -34,9 +34,9 @@
             position: fixed;
             top: 0;
             left: 0;
-            padding: 10px;
+            padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* Logo bên trái, menu và biểu tượng bên phải */
             align-items: center;
             z-index: 1000;
         }
@@ -89,8 +89,8 @@
             }
 
         .content {
-            padding-top: 80px; /* Add padding to prevent overlap with header */
-            padding-bottom: 60px; /* Add padding to prevent overlap with footer */
+            padding-top: 80px;
+            padding-bottom: 60px;
             flex: 1;
         }
 
@@ -213,31 +213,110 @@
         b {
             font-size: 1vw;
         }
+
+        /*css phần đăng nhập và giỏ hàng*/
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+            .header-icons a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                position: relative;
+            }
+
+        .cart-icon .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: red;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 2px 6px;
+        }
+
+        /*Phần user kiểm tra hiển thị đăng nhập*/
+        /* Ẩn thông tin người dùng mặc định */
+        .user-info {
+            display: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .login-icon:hover .user-info {
+            display: block;
+        }
+
+        /* Định dạng liên kết trong user-info */
+        .user-info a {
+            display: block;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+            .user-info a:hover {
+                background-color: #ff8c00;
+            }
+
     </style>
 </head>
 <body>
     <div class="header">
+        <!-- Logo Section -->
         <section id="logo">
             <a href="~/Customer/Home/Index">
-                <img src="~/Images/logo.png" />
+                <img src="~/Images/logo.png" alt="Logo">
             </a>
         </section>
+
+        <!-- Navigation Section -->
         <div id="navigation">
             <nav>
                 <ul>
-                    <li><a href="#banner">Trang chủ</a></li>
+                    <li><a href="/Customer/Home/Index">Trang chủ</a></li>
                     <li><a href="#aboutus">Giới thiệu</a></li>
                     <li><a href="#">Đánh giá</a></li>
                     <li><a href="~/Home/Contact">Liên hệ</a></li>
-                    <li><a href="#service">Dich vu</a></li>
-                    <li><a href="#product">San pham</a></li>
+                    <li><a href="/Customer/DichVu/Index">Dịch vụ</a></li>
+                    <li><a href="/Customer/SanPham/Index">Sản phẩm</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Icons Section -->
+        <div class="header-icons">
+            <!-- Cart Icon -->
+            @Html.Action("GioHang_Par", "GioHang")
+
+            <!-- Login Icon -->
+            @Html.Action("User_Par", "DangNhap")
+
+        </div>
+
+        <!-- Menu Button -->
         <div id="menubtn">
-            <img src="~/Images/menu.png" />
+            <img src="~/Images/menu.png" alt="Menu">
         </div>
     </div>
+
 
     <div class="content">
         @RenderBody()

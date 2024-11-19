@@ -55,6 +55,7 @@ create table SanPham
 	MaSanPham int identity(1,1) primary key,
 	HinhAnh nvarchar(MAX) null,
 	TenSanPham nvarchar(200) not null,
+	MoTa nvarchar(max) null,
 	GiaBan money not null,
 	SoLuong int null,
 	DaBan int null,
@@ -64,14 +65,14 @@ create table SanPham
 	foreign key (MaLoaiSanPham) references LoaiSanPham(MaLoaiSanPham),
 )
 go
-insert into SanPham (HinhAnh, TenSanPham, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 340g', 100000, 10, 0, 0, 1);
-insert into SanPham (HinhAnh, TenSanPham, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 300g ', 100000, 10, 0, 0, 1);
-insert into SanPham (HinhAnh, TenSanPham, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 30g ', 100000, 10, 0, 0, 1);
-insert into SanPham (HinhAnh, TenSanPham, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 10g ', 100000, 10, 0, 0, 1);
+insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
+values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 340g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
+values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 300g ', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
+values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 30g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
+values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 10g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
 go
 create table DichVu
 (
@@ -142,9 +143,6 @@ create table DonHang
 	NgayDat date default(getdate()),
 	DiaChi nvarchar(100) not null,
 	SDT varchar(10) not null,
-	ThanhPho nvarchar(100) not null,
-	Quan nvarchar(100) not null,
-	Phuong nvarchar(100) not null,
 	NgayGiao date null,
 	TongTien float not null,
 	TrangThai int default(0), --0: duyệt đơn, 1: đang giao, 2 đã giao, 3 đã hủy

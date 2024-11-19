@@ -1,0 +1,42 @@
+﻿﻿@using BarberShop.Models
+@model List<DichVu>
+
+@{
+    ViewBag.Title = "Danh Sách Dịch Vụ";
+    Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/Styles/style.css" />
+</head>
+
+<body>
+    <!--Code Sản Phẩm-->
+    <section id="product">
+        <div class="title-text">
+            <p>Dịch Vụ</p>
+
+            <div class="gallery">
+                @if (Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="content-pro">
+                            <a href="/Customer/DichVu/ChiTietDichVu?iMaDichVu=@item.MaDichVu" style="text-decoration:none">
+                                @*<img class="pic" src="~/Images/Hard-wax.jpg" />*@
+                                <h2>@item.TenDichVu</h2>
+                                <span>Thời gian: @item.ThoiGian phút</span>
+                                <h6>@string.Format("{0:0,0}", item.DonGia) vnđ</h6>
+                            </a>
+                            <button class="buy-1"><b>Mua</b></button>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </section>
+    <!--Code Sản Phẩm-->
+</body>
+</html>
+

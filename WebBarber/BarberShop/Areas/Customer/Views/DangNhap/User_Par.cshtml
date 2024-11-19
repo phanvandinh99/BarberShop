@@ -1,0 +1,23 @@
+﻿@using BarberShop.Models
+
+<div class="login-icon">
+    @if (ViewBag.User == null)
+    {
+        <a href="~/Customer/DangNhap/DangNhap">
+            <i class="fas fa-user"></i>
+            Đăng nhập
+        </a>
+    }
+    else
+    {
+        <a href="#">
+            <i class="fas fa-user"></i>
+            Hi: @ViewBag.User.HoTen
+        </a>
+        <div class="user-info">
+            <a href="~/Customer/Order/ViewOrders">Đơn của bạn</a>
+            <a href="~/Customer/Order/ViewOrders">Lịch Đặt</a>
+            <a href="~/Customer/DangNhap/DangXuat">Đăng xuất</a>
+        </div>
+    }
+</div>
