@@ -118,13 +118,7 @@
 <div class="container">
     <h2>Danh Sách Lịch Hẹn Của Bạn</h2>
 
-    <!-- Navbar -->
-    <nav class="nav nav-tabs">
-        <a class="nav-link @(ViewBag.TrangThai == null ? "active" : "")" href="/Customer/GioHang/XemGioHangSauKhiMua?sTaiKhoanKH=@ViewBag.TaiKhoanKH">Tất Cả</a>
-        <a class="nav-link @(ViewBag.TrangThai == 0 ? "active" : "")" href="/Customer/GioHang/XemGioHangSauKhiMua?sTaiKhoanKH=@ViewBag.TaiKhoanKH&iTrangThai=0">Đang Hẹn</a>
-        <a class="nav-link @(ViewBag.TrangThai == 1 ? "active" : "")" href="/Customer/GioHang/XemGioHangSauKhiMua?sTaiKhoanKH=@ViewBag.TaiKhoanKH&iTrangThai=1">Đã Dùng</a>
-        <a class="nav-link @(ViewBag.TrangThai == 2 ? "active" : "")" href="/Customer/GioHang/XemGioHangSauKhiMua?sTaiKhoanKH=@ViewBag.TaiKhoanKH&iTrangThai=2">Đã Hủy</a>
-    </nav>
+
 
     <!-- Table -->
     <table>
@@ -178,7 +172,7 @@
             else
             {
                 <tr>
-                    <td colspan="6" class="text-center text-muted">Không có lịch hẹn nào.</td>
+                    <td colspan="7" class="text-center text-muted">Không có lịch hẹn nào.</td>
                 </tr>
             }
         </tbody>

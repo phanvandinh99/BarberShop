@@ -63,7 +63,7 @@
 
 <h2 style="text-align:center; color:#333;">Đăng Ký</h2>
 
-@using (Html.BeginForm("DangNhap", "DangKy", FormMethod.Post))
+@using (Html.BeginForm("DangKi", "DangNhap", FormMethod.Post))
 {
     <div class="login-form">
         <div class="form-group">
@@ -76,7 +76,7 @@
         </div>
         <div class="form-group">
             <label for="PasswordUser">Họ Tên</label>
-            <input type="text" class="form-control underlined" name="HoTen" placeholder="****" required>
+            <input type="text" class="form-control underlined" name="HoTen" placeholder="Họ tên..." required>
         </div>
         <div class="form-group">
             <label for="PasswordUser">Giới Tính</label>
@@ -91,11 +91,11 @@
         </div>
         <div class="form-group">
             <label for="PasswordUser">Địa Chỉ</label>
-            <input type="text" class="form-control underlined" name="DiaCHi" placeholder="****" required>
+            <input type="text" class="form-control underlined" name="DiaCHi" placeholder="Địa chỉ..." required>
         </div>
 
         <div class="form-group" style="text-align: center;">
-            <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+            <button type="submit" class="btn btn-primary btn-block">Đăng Kí</button>
         </div>
     </div>
 }
