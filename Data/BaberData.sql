@@ -66,13 +66,13 @@ create table SanPham
 )
 go
 insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 340g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+values (N'Hard-wax.jpg', N'Reuzel Blue Pomade 340g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
 insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 300g ', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+values (N'Hard-wax.jpg', N'Reuzel Blue Pomade 300g ', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
 insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 30g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+values (N'Hard-wax.jpg', N'Reuzel Blue Pomade 30g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
 insert into SanPham (HinhAnh, TenSanPham, MoTa, GiaBan, SoLuong, DaBan, TrangThai, MaLoaiSanPham) 
-values (N'AnhMacDinh.png', N'Reuzel Blue Pomade 10g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
+values (N'Hard-wax.jpg', N'Reuzel Blue Pomade 10g', N'Keo vuốt tóc', 100000, 10, 0, 0, 1);
 go
 create table DichVu
 (
@@ -142,7 +142,7 @@ create table DonHang
 	NgayDat date not null,
 	DiaChi nvarchar(100) not null,
 	SDT varchar(10) not null,
-	NgayGiao date null,
+	NgayGiao date not null,
 	TongTien float not null,
 	TrangThai int default(0), --0: duyệt đơn, 1: đang giao, 2 đã giao, 3 đã hủy
 	TaiKhoanKH varchar(50) not null, 
