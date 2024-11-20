@@ -110,6 +110,7 @@ create table LichHen
 	SDT varchar(10) not null,
 	HoTen nvarchar(100) not null,
 	ThoiGianDat varchar(10) not null,
+	ThoiGianHuy Datetime not null,
 	NgayDat Datetime not null,
 	TongTien money null,
 	TrangThai Tinyint not null, -- 0: Đang đặt, 1: Đã duyệt, 2: Đã Hủy, 3: Đã Thanh Toán
@@ -128,8 +129,7 @@ create table SuDungDichVu
 	MaLichHen int,
 	primary key (MaDichVu, MaLichHen),
 	ThanhTien money not null,
-	ThoiGianHuy Datetime not null,
-	Huy Bit,
+	Huy Bit not null,
 
 	foreign key (MaDichVu) references DichVu(MaDichVu),
 	foreign key (MaLichHen) references LichHen(MaLichHen),
@@ -139,7 +139,7 @@ create table DonHang
 (
 	MaDonHang int identity(1,1) primary key,
 	TenNguoiNhan nvarchar(100) not null,
-	NgayDat date default(getdate()),
+	NgayDat date not null,
 	DiaChi nvarchar(100) not null,
 	SDT varchar(10) not null,
 	NgayGiao date null,
