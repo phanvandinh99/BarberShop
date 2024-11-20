@@ -25,20 +25,26 @@
                 <tr>
                     <td>@item.MaLichHen</td>
                     <td>@item.SDT</td>
-                    <td>@item.HoTen</td>
+                    <td>@item.HoTen</td> CHờ anh tý
                     <td>@item.ThoiGianDat</td>
                     <td>@string.Format("{0:0,0}", item.TongTien) vnđ</td>
                     <td>
                         @switch (item.TrangThai)
                         {
-                            case 0:<span class="badge bg-warning">Đang Hẹn</span>; break;
-                            case 1: <span class="badge bg-info">Đã Dùng</span>; break;
-                            case 2: <span class="badge bg-success">Đã Hủy</span>; break;
+                            case 0:<span class="badge bg-warning">Đang chờ chấp thuận</span>; break;
+                            case 1: <span class="badge bg-info">Đã Duyệt</span>; break;
+                            case 2: <span class="badge bg-info">Đã Duyệt</span>; break;
+                            case 3: <span class="badge bg-success">Đã Hủy</span>; break;
                             default: <span class="badge bg-secondary">Không Rõ</span>; break;
                         }
                     </td>
                     <td>
-                        <button class="btn">Xem</button>
+                        @if (item.TrangThai == 0)
+                        {
+                            <a class="btn" href="/Admin/LichHen/CapNhatLichHen?iMaLichHen=@item.MaLichHen&iTrangThai=1">Chấp nhận</a>
+                        }
+                        <a class="btn" href="/Admin/LichHen/CapNhatLichHen?iMaLichHen=@item.MaLichHen&iTrangThai=2">Hủy</a>
+                        <a class="btn" href="/Admin/LichHen/CapNhatLichHen?iMaLichHen=@item.MaLichHen&iTrangThai=3">Xóa</a>
                     </td>
                 </tr>
             }

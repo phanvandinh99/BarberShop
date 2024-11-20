@@ -51,7 +51,7 @@ namespace BarberShop.Areas.Customer.Controllers
                 TempData["ToastMessage"] = "success|Đăng ký thành công.";
                 return RedirectToAction("Index", "Home");
             }
-            catch
+            catch (Exception ex)
             {
                 ViewBag.ThongBao = "Đăng Ký Không Thành Công";
                 return View();

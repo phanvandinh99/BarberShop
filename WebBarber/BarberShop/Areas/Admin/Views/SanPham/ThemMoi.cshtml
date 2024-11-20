@@ -1,0 +1,54 @@
+﻿@using BarberShop.Models
+
+@{
+    ViewBag.Title = "Thêm Mới Sản Phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@{
+    IEnumerable<LoaiSanPham> listLoaiSanPham = (IEnumerable<LoaiSanPham>)ViewBag.LoaiSanPham;
+}
+
+<div class="form-container">
+    <h1>Thêm Mới Sản Phẩm</h1>
+    @using (Html.BeginForm("ThemMoi", "SanPham", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        <div class="form-group">
+            <label for="name">Tên Sản Phẩm:</label>
+            <input type="text" id="name" name="TenSanPham" placeholder="Tên sản phẩm..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="avatar">Hình Ảnh:</label>
+            <input type="file" id="avatar" name="AnhBia" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Giá Bán:</label>
+            <input type="number" id="name" name="GiaBan" placeholder="100000" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="name">Số Lượng:</label>
+            <input type="number" id="name" name="SoLuong" placeholder="10" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Loại Sản Phẩm:</label>
+            <select id="gender" name="MaLoaiSanPham" required>
+                <option value="" disabled selected>Chọn Loại Sản Phẩm</option>
+                @foreach (var item in listLoaiSanPham)
+                {
+                    <option value="@item.MaLoaiSanPham">@item.TenLoaiSanPham</option>
+
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn">Thêm</button>
+        </div>
+    }
+</div>

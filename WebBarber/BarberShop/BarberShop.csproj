@@ -243,6 +243,9 @@
     <Content Include="Areas\Admin\Views\DichVu\Index.cshtml" />
     <Content Include="Areas\Admin\Views\LichHen\Index.cshtml" />
     <Content Include="Areas\Admin\Views\DonHang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\ThemMoi.cshtml" />
+    <Content Include="Areas\Admin\Views\DichVu\ThemMoi.cshtml" />
+    <Content Include="Areas\Admin\Views\DonHang\XemChiTiet.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

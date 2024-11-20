@@ -1,0 +1,111 @@
+﻿@using BarberShop.Models
+@model DonHang
+
+@{
+    ViewBag.Title = "Chi Tiết Đơn Hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@{
+    IEnumerable<ChiTietDonHang> listChiTietDonHang = (IEnumerable<ChiTietDonHang>)ViewBag.ChiTietDonHang;
+}
+
+<main class="content">
+    <h2>Chi Tiết Đơn Hàng</h2>
+
+    <!-- Order Info -->
+    <div class="order-info">
+        <h4>
+            <strong>Trạng Thái:</strong>
+            @switch (Model.TrangThai)
+            {
+                case 0:<span class="badge bg-warning">Đang Xử Lý</span>; break;
+                case 1: <span class="badge bg-info">Đang Giao</span>; break;
+                case 2: <span class="badge bg-success">Đã Giao</span>; break;
+                case 3: <span class="badge bg-danger">Đã Hủy</span>; break;
+                default: <span class="badge bg-secondary">Không Rõ</span>; break;
+            }
+        </h4>
+        <h4><strong>Tên Người Nhận:</strong> @Model.TenNguoiNhan</h4>
+        <h4><strong>Số Điện Thoại:</strong> @Model.SDT</h4>
+        <h4><strong>Địa Chỉ:</strong> @Model.DiaChi</h4>
+    </div>
+
+    <!-- Product Table -->
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Hình Ảnh</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Số Lượng</th>
+                    <th>Giá</th>
+                    <th>Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (listChiTietDonHang != null && listChiTietDonHang.Any())
+                {
+                    int index = 1;
+                    foreach (var chiTiet in listChiTietDonHang)
+                    {
+                        <tr>
+                            <td>@index</td>
+                            <td>
+                                <img class="pic" src="~/Images/@chiTiet.SanPham.HinhAnh" style="width: 80px; height: 80px;" />
+                            </td>
+                            <td>@chiTiet.SanPham.TenSanPham</td>
+                            <td>@chiTiet.SoLuongMua</td>
+                            <td>@String.Format("{0:N0} đ", chiTiet.ThanhTien)</td>
+                            <td>@String.Format("{0:N0} đ", chiTiet.SoLuongMua * chiTiet.ThanhTien)</td>
+                        </tr>
+                        index++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">Không có sản phẩm nào trong đơn hàng.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Total Price -->
+    <div class="total-price">
+        <strong>Tổng Tiền:</strong> @String.Format("{0:N0} vnđ", Model.TongTien)
+    </div><br />
+
+    @switch (Model.TrangThai)
+    {
+        case 0:
+            <div class="total-price">
+                <a class="btn-add" href="/Admin/DonHang/CapNhatDonHang?iMaDonHang=@Model.MaDonHang&iTrangThai=0">Đang Giao</a>
+                <a class="btn-add" href="/Admin/DonHang/CapNhatDonHang?iMaDonHang=@Model.MaDonHang&iTrangThai=3">Hủy Đơn</a>
+            </div>
+            break;
+
+        case 1:
+            <div class="total-price">
+                <a class="btn-add" href="/Admin/DonHang/CapNhatDonHang?iMaDonHang=@Model.MaDonHang&iTrangThai=2">Đã Giao</a>
+                <a class="btn-add" href="/Admin/DonHang/CapNhatDonHang?iMaDonHang=@Model.MaDonHang&iTrangThai=3">Hủy Đơn</a>
+            </div>
+            break;
+
+        case 2:
+            <span class="badge bg-success">Đã Giao</span>
+            break;
+
+        case 3:
+            <span class="badge bg-danger">Đã Hủy</span>
+            break;
+
+        default:
+            <span class="badge bg-secondary">Không Rõ</span>
+            break;
+    }
+
+
+

@@ -55,5 +55,21 @@ namespace BarberShop.Areas.Admin.Controllers
                 return View();
             }
         }
+
+        // Đăng xuất
+        public ActionResult DangXuat()
+        {
+            try
+            {
+                Session["TaiKhoanNV"] = null;
+                TempData["ToastMessage"] = "info|Đã đăng xuất.";
+                return RedirectToAction("DangNhap", "DangNhap");
+            }
+            catch (Exception ex)
+            {
+                TempData["ToastMessage"] = "error|Đăng xuất thất bại.";
+                return View();
+            }
+        }
     }
 }

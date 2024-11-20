@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using BarberShop.Models
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,22 +18,36 @@
 <body>
     <header class="navbar">
         <div class="logo">Barbershop</div>
-        <div class="user-info">Đăng Nhập</div>
+        @if (Session["TaiKhoanNV"] == null)
+        {
+            <a class="user-info" href="/Admin/DangNhap/DangNhap" style="color:white; text-decoration: none">Đăng Nhập</a>
+        }
+        else
+        {
+            NhanVien nv = (NhanVien)Session["TaiKhoanNV"];
+            <a class="user-info" href="/Admin/DangNhap/DangXuat" style="color:white; text-decoration: none" title="Đăng Xuất">Xin chào: @nv.HoTen</a>
+        }
     </header>
 
     <div class="container">
         <aside class="sidebar">
             <ul>
-                <li><a href="/Admin/Home/Index">Trang Chủ</a></li>
-                <li><a href="/Admin/SanPham/Index">QL Sản Phẩm</a></li>
-                <li><a href="/Admin/DichVu/Index">QL Dịch Vụ</a></li>
-                <li><a href="/Admin/LichHen/Index">Đặt lịch</a></li>
-                <li><a href="/Admin/DonHang/Index">Đơn Hàng</a></li>
+                @if (Session["TaiKhoanNV"] == null)
+                {
+                    <li><a href="/Admin/DangNhap/DangNhap">Đăng Nhập</a></li>
+                }
+                else
+                {
+                    <li><a href="/Admin/Home/Index">Trang Chủ</a></li>
+                    <li><a href="/Admin/SanPham/Index">QL Sản Phẩm</a></li>
+                    <li><a href="/Admin/DichVu/Index">QL Dịch Vụ</a></li>
+                    <li><a href="/Admin/LichHen/Index">Đặt lịch</a></li>
+                    <li><a href="/Admin/DonHang/Index">Đơn Hàng</a></li>
+                }
             </ul>
         </aside>
 
         @RenderBody()
-
     </div>
 
     <script>
