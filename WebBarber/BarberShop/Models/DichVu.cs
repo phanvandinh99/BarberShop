@@ -22,7 +22,7 @@ namespace BarberShop.Models
         [Column(TypeName = "money")]
         public decimal DonGia { get; set; }
 
-        [StringLength(1)]
+        [StringLength(10)]
         public string ThoiGian { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
