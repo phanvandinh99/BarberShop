@@ -26,6 +26,37 @@ namespace BarberShop.Areas.Customer.Controllers
 
             return PartialView();
         }
+        public ActionResult DangKi()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> DangKi(KhachHang model)
+        {
+            try
+            {
+                KhachHang kh = new KhachHang();
+                kh.TaiKhoanKH = model.TaiKhoanKH;
+                kh.MatKhauKH = model.MatKhauKH;
+                kh.HoTen = model.HoTen;
+                kh.GioiTinh = model.GioiTinh;
+                kh.SDT = model.SDT;
+                kh.DiaChi = kh.DiaChi;
+                kh.TrangThai = 0;
+              
+                db.KhachHang.Add(kh);
+                db.SaveChanges();
+
+                TempData["ToastMessage"] = "success|Đăng ký thành công.";
+                return RedirectToAction("Index", "Home");
+            }
+            catch
+            {
+                ViewBag.ThongBao = "Đăng Ký Không Thành Công";
+                return View();
+            }
+        }
 
         public ActionResult DangNhap()
         {

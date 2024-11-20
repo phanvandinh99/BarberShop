@@ -118,11 +118,11 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>ĐẶT LỊCH</h1>
         <p>Theo dõi <a href="#">Fanpage Facebook</a> | <a href="#">Instagram</a></p>
-        <form>
+        @using (Html.BeginForm("DatLich", "DatLich", FormMethod.Post))
+        {
             <label for="name">Tên khách hàng</label>
             <input type="text" id="name" name="HoTen" placeholder="Tên khách hàng" required>
 
@@ -173,10 +173,48 @@
                     }
                 }
             </div>
+            <br />
+            <div>
+                <p>---------- TẠM TÍNH ----------</p>
+                <p>Tổng tiền: <span id="totalAmount">0</span> vnđ</p>
+                <p>Dự kiến: <span id="totalTime">0</span> phút</p>
+            </div>
 
             <button type="submit">Gửi</button>
-        </form>
+        }
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const serviceCheckboxes = document.querySelectorAll(".service-list input[type='checkbox']");
+            const totalAmountElement = document.getElementById("totalAmount");
+            const totalTimeElement = document.getElementById("totalTime");
+
+            serviceCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener("change", calculateTotal);
+            });
+
+            function calculateTotal() {
+                let totalAmount = 0;
+                let totalTime = 0;
+
+                serviceCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const serviceData = checkbox.nextSibling.textContent.match(/\((.*?) vnđ\/~(.*?) phút\)/);
+                        if (serviceData) {
+                            const price = parseInt(serviceData[1].replace(/,/g, ""));
+                            const time = parseInt(serviceData[2]);
+                            totalAmount += price;
+                            totalTime += time;
+                        }
+                    }
+                });
+
+                totalAmountElement.textContent = totalAmount.toLocaleString();
+                totalTimeElement.textContent = totalTime;
+            }
+        });
+
+    </script>
 </body>
 </html>

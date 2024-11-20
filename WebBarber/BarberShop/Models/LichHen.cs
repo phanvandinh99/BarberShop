@@ -29,6 +29,8 @@ namespace BarberShop.Models
         [StringLength(10)]
         public string ThoiGianDat { get; set; }
 
+        public DateTime ThoiGianHuy { get; set; }
+
         public DateTime NgayDat { get; set; }
 
         [Column(TypeName = "money")]

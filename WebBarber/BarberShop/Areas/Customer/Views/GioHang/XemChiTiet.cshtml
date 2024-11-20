@@ -1,0 +1,170 @@
+﻿@using BarberShop.Models
+@model DonHang
+
+@{
+    ViewBag.Title = "Chi Tiết Đơn Hàng";
+    Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+@{
+    IEnumerable<ChiTietDonHang> listChiTietDonHang = (IEnumerable<ChiTietDonHang>)ViewBag.ChiTietDonHang;
+}
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .order-info {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+        .order-info h4 {
+            margin: 5px 0;
+            color: #555;
+        }
+
+    .table-container {
+        margin-top: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .product-img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .total-price {
+        text-align: right;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    /* Button Styles */
+    .btn {
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn-info {
+        background-color: #17a2b8;
+    }
+
+        .btn-info:hover {
+            background-color: #138496;
+        }
+</style>
+
+<div class="container">
+    <h2>Chi Tiết Đơn Hàng</h2>
+
+    <!-- Order Info -->
+    <div class="order-info">
+        <h4>
+            <strong>Trạng Thái:</strong>
+            @switch (Model.TrangThai)
+            {
+                case 0:<span class="badge bg-warning">Đang Xử Lý</span>; break;
+                case 1: <span class="badge bg-info">Đang Giao</span>; break;
+                case 2: <span class="badge bg-success">Đã Giao</span>; break;
+                case 3: <span class="badge bg-danger">Đã Hủy</span>; break;
+                default: <span class="badge bg-secondary">Không Rõ</span>; break;
+            }
+        </h4>
+        <h4><strong>Tên Người Nhận:</strong> @Model.TenNguoiNhan</h4>
+        <h4><strong>Số Điện Thoại:</strong> @Model.SDT</h4>
+        <h4><strong>Địa Chỉ:</strong> @Model.DiaChi</h4>
+    </div>
+
+    <!-- Product Table -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Hình Ảnh</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Số Lượng</th>
+                    <th>Giá</th>
+                    <th>Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (listChiTietDonHang != null && listChiTietDonHang.Any())
+                {
+                    int index = 1;
+                    foreach (var chiTiet in listChiTietDonHang)
+                    {
+                        <tr>
+                            <td>@index</td>
+                            <td>
+                                <img src="@chiTiet.SanPham.HinhAnh" alt="@chiTiet.SanPham.TenSanPham" class="product-img" />
+                            </td>
+                            <td>@chiTiet.SanPham.TenSanPham</td>
+                            <td>@chiTiet.SoLuongMua</td>
+                            <td>@String.Format("{0:N0} đ", chiTiet.ThanhTien)</td>
+                            <td>@String.Format("{0:N0} đ", chiTiet.SoLuongMua * chiTiet.ThanhTien)</td>
+                        </tr>
+                        index++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">Không có sản phẩm nào trong đơn hàng.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Total Price -->
+    <div class="total-price">
+        <strong>Tổng Tiền:</strong> @String.Format("{0:N0} đ", Model.TongTien)
+    </div>
+        <a href="/Customer/GioHang/XemGioHangSauKhiMua?sTaiKhoanKH=@Model.TaiKhoanKH&iTrangThai=@Model.TrangThai" class="btn btn-info">Trở Về</a>
+</div>

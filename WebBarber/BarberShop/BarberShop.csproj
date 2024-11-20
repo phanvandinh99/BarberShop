@@ -151,6 +151,7 @@
     <Compile Include="Models\SanPham.cs" />
     <Compile Include="Models\SuDungDichVu.cs" />
     <Compile Include="Models\ViewModels\GioHangItems.cs" />
+    <Compile Include="Models\ViewModels\LichHenItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +226,11 @@
     <Content Include="Areas\Customer\Views\DangNhap\DangNhap.cshtml" />
     <Content Include="Areas\Customer\Views\DangNhap\User_Par.cshtml" />
     <Content Include="Areas\Customer\Views\DatLich\Index.cshtml" />
+    <Content Include="Areas\Customer\Views\GioHang\XemGioHangSauKhiMua.cshtml" />
+    <Content Include="Areas\Customer\Views\GioHang\XemChiTiet.cshtml" />
+    <Content Include="Areas\Customer\Views\DatLich\XemLichHen.cshtml" />
+    <Content Include="Areas\Customer\Views\DatLich\XemChiTiet.cshtml" />
+    <Content Include="Areas\Customer\Views\DangNhap\DangKi.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

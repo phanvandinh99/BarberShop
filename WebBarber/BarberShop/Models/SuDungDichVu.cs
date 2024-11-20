@@ -20,9 +20,7 @@ namespace BarberShop.Models
         [Column(TypeName = "money")]
         public decimal ThanhTien { get; set; }
 
-        public DateTime ThoiGianHuy { get; set; }
-
-        public bool? Huy { get; set; }
+        public bool Huy { get; set; }
 
         public virtual DichVu DichVu { get; set; }
 

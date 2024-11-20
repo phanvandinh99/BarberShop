@@ -22,7 +22,7 @@ namespace BarberShop.Models
         public string TenNguoiNhan { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? NgayDat { get; set; }
+        public DateTime NgayDat { get; set; }
 
         [Required]
         [StringLength(100)]

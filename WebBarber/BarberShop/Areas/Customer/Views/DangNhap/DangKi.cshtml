@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Đăng Ký BarberShop";
+    Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fc;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: dodgerblue;
+        border: none;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    p {
+        font-size: 14px;
+        color: #ff0000;
+    }
+</style>
+
+<h2 style="text-align:center; color:#333;">Đăng Ký</h2>
+
+@using (Html.BeginForm("DangNhap", "DangKy", FormMethod.Post))
+{
+    <div class="login-form">
+        <div class="form-group">
+            <label for="NameUser">Tên Đăng Nhập</label>
+            <input type="text" class="form-control underlined" name="TaiKhoanKH" placeholder="Username..." required>
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Mật Khẩu</label>
+            <input type="password" class="form-control underlined" name="MatKhauKH" placeholder="****" required>
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Họ Tên</label>
+            <input type="text" class="form-control underlined" name="HoTen" placeholder="****" required>
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Giới Tính</label>
+            <select id="time" name="GioiTinh" required>
+                <option value="0">Nam</option>
+                <option value="1">Nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Số Điện Thoại</label>
+            <input type="number" class="form-control underlined" name="SDT" placeholder="0123456789" required>
+        </div>
+        <div class="form-group">
+            <label for="PasswordUser">Địa Chỉ</label>
+            <input type="text" class="form-control underlined" name="DiaCHi" placeholder="****" required>
+        </div>
+
+        <div class="form-group" style="text-align: center;">
+            <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+        </div>
+    </div>
+}
+
+
+
+

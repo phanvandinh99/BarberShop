@@ -1,0 +1,198 @@
+﻿@using BarberShop.Models
+@model LichHen
+
+@{
+    ViewBag.Title = "Chi Tiết Lịch Hẹn";
+    Layout = "~/Areas/Customer/Views/Shared/_MasterLayout.cshtml";
+}
+
+@{
+    IEnumerable<SuDungDichVu> listSuDungDichVu = (IEnumerable<SuDungDichVu>)ViewBag.SuDungDichVu;
+}
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .order-info {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+        .order-info h4 {
+            margin: 5px 0;
+            color: #555;
+        }
+
+    .table-container {
+        margin-top: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .product-img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .total-price {
+        text-align: right;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    /* Button Styles */
+    .btn {
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn-info {
+        background-color: #17a2b8;
+    }
+
+        .btn-info:hover {
+            background-color: #138496;
+        }
+
+    .bg-warning {
+        background-color: #ffc107;
+    }
+
+    .bg-success {
+        background-color: #28a745;
+    }
+</style>
+
+<div class="container">
+    <h2>Chi Tiết Lịch Hẹn</h2>
+
+    <!-- Order Info -->
+    <div class="order-info">
+        <h4>
+            <strong>Trạng Thái:</strong>
+            @switch (Model.TrangThai)
+            {
+                case 0:<span class="badge bg-warning">Đang Hẹn</span>; break;
+                case 1: <span class="badge bg-info">Đã Dùng</span>; break;
+                case 2: <span class="badge bg-success">Đã Hủy</span>; break;
+                default: <span class="badge bg-secondary">Không Rõ</span>; break;
+            }
+        </h4>
+        <h4><strong>Khách Hàng:</strong> @Model.HoTen</h4>
+        <h4><strong>Số Điện Thoại:</strong> @Model.SDT</h4>
+        <h4><strong>Thời Gian:</strong> @Model.ThoiGianDat</h4>
+        <h4><strong>Thời Gian Chờ:</strong> @Model.ThoiGianHuy.ToString("dd/MM/yyyy HH:mm")</h4>
+        <h4><strong>Chi Nhánh:</strong> @Model.ChiNhanh.TenChiNhanh</h4>
+
+        <h4><strong>Tổng Tiền:</strong> @String.Format("{0:N0} đ", Model.TongTien)</h4>
+        @if (Model.TaiKhoanKH != null)
+        {
+            <h4><strong>Duyệt Bởi</strong> @Model.TaiKhoanNV</h4>
+        }
+    </div>
+
+    <!-- Product Table -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Dịch Vụ</th>
+                    <th>Đơn Giá</th>
+                    <th>Trạng Thái</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (listSuDungDichVu != null && listSuDungDichVu.Any())
+                {
+                    int index = 1;
+                    foreach (var dichVu in listSuDungDichVu)
+                    {
+                        <tr>
+                            <td>@index</td>
+                            <td>@dichVu.DichVu.TenDichVu</td>
+                            <td>@String.Format("{0:N0} đ", dichVu.ThanhTien)</td>
+
+                            <td>
+                                @if (dichVu.Huy)
+                                {
+                                    <span class="badge bg-warning">Đã Chọn</span>;
+                                }
+                                else
+                                {
+                                    <span class="badge bg-success">Chưa Dùng</span>;
+
+                                }
+                            </td>
+                            <td>
+                                @using (Html.BeginForm("XoaDichVu", "DatLich", new { @iMaDichVu = dichVu.MaDichVu, @iMaLichHen = dichVu.MaLichHen, @strURL = Request.Url.ToString() }))
+                                {
+                                    <button type="submit" class="delete-btn">Xóa</button>
+                                }
+                            </td>
+                        </tr>
+                        index++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">Không có dịch vụ nào được chọn.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Total Price -->
+    <div class="total-price">
+        <strong>Tổng Tiền:</strong> @String.Format("{0:N0} đ", Model.TongTien)
+    </div>
+    <a href="/Customer/DatLich/XemLichHen?sTaiKhoanKH=@Model.TaiKhoanKH" class="btn btn-info">Trở Về</a>
+    <a href="/Customer/DatLich/XemLichHen?sTaiKhoanKH=@Model.TaiKhoanKH" class="btn btn-warning">Trở Về</a>
+</div>

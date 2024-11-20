@@ -2,6 +2,7 @@
 using BarberShop.Models.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -268,6 +269,84 @@ namespace BarberShop.Areas.Customer.Controllers
             {
                 TempData["ToastMessage"] = "error|Đặt hàng thất bại.";
                 return RedirectToAction("GioHang", "GioHang");
+            }
+        }
+        #endregion
+
+        #region Xem Giỏ Hàng sau khi mua
+        [HttpGet]
+        public async Task<ActionResult> XemGioHangSauKhiMua(string sTaiKhoanKH, int? iTrangThai)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(sTaiKhoanKH))
+                {
+                    TempData["ToastMessage"] = "info|Bạn cần phải đăng nhập";
+                    return RedirectToAction("Index", "Home");
+                }
+
+                // Tìm khách hàng
+                KhachHang kh = await db.KhachHang.FindAsync(sTaiKhoanKH);
+
+                if (kh == null)
+                {
+                    TempData["ToastMessage"] = "error|Khách hàng không tồn tại.";
+                    return RedirectToAction("Index", "Home");
+                }
+
+                // Lấy danh sách đơn hàng theo trạng thái
+                List<DonHang> donHang;
+                if (iTrangThai == null)
+                {
+                    donHang = await db.DonHang
+                                      .Where(n => n.TaiKhoanKH == kh.TaiKhoanKH)
+                                      .OrderByDescending(n => n.MaDonHang)
+                                      .ToListAsync();
+                }
+                else
+                {
+                    donHang = await db.DonHang
+                                      .Where(n => n.TaiKhoanKH == kh.TaiKhoanKH && n.TrangThai == iTrangThai)
+                                      .OrderByDescending(n => n.MaDonHang)
+                                      .ToListAsync();
+                }
+
+                ViewBag.TrangThai = iTrangThai;
+                ViewBag.TaiKhoanKH = sTaiKhoanKH;
+
+                // Trả về danh sách đơn hàng
+                return View(donHang);
+            }
+            catch (Exception ex)
+            {
+                // Log lỗi nếu cần thiết
+                TempData["ToastMessage"] = "error|Xem đơn hàng thất bại.";
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> XemChiTiet(int? iMaDonHang)
+        {
+            try
+            {
+                if (iMaDonHang == null)
+                {
+                    TempData["ToastMessage"] = "info|Đơn hàng không tồn tại";
+                    return RedirectToAction("Index", "Home");
+                }
+
+                DonHang donHang = await db.DonHang.FindAsync(iMaDonHang);
+
+                ViewBag.ChiTietDonHang = await db.ChiTietDonHang.Where(n => n.MaDonHang == iMaDonHang)
+                                                                .ToListAsync();
+
+                return View(donHang);
+            }
+            catch (Exception ex)
+            {
+                TempData["ToastMessage"] = "error|Xem chi tiết đơn hàng thất bại.";
+                return RedirectToAction("Index", "Home");
             }
         }
         #endregion
