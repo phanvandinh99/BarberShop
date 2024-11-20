@@ -86,7 +86,7 @@ insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Cắt Tóc Nam', 7000
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Gội Đầu', 30000, 20);
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Ráy Tai', 40000, 30);
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Cạo Mặt', 20000, 20);
-insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Ráy Tai', 40000, 30);
+insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Cạo Lông', 40000, 30);
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Lột Mụn Cám', 60000, 30);
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Tẩy Tóc', 100000, 60);
 insert into DichVu (TenDichVu, DonGia, ThoiGian) values (N'Nhuộm Tóc', 300000, 120);
