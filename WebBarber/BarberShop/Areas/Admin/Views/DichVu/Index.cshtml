@@ -1,0 +1,35 @@
+﻿@using BarberShop.Models
+@model List<DichVu>
+@{
+    ViewBag.Title = "Quản Lý Dịch Vụ";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main class="content">
+    <h1>Danh sách Dịch Vụ</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Dịch Vụ</th>
+                <th>Tên Dịch Vụ</th>
+                <th>Đơn Giá</th>
+                <th>Thời Gian (phút)</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaDichVu</td>
+                    <td>@item.TenDichVu</td>
+                    <td>@string.Format("{0:0,0}", item.DonGia) vnđ</td>
+                    <td>@item.ThoiGian</td>
+                    <td>
+                        <button class="btn">Xem</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

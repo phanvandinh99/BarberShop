@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.title</title>
+    <link href="~/Styles/Admin/style.css" rel="stylesheet" />
+
+    <!-- JavaScript jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS toastr -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <!-- JavaScript toastr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Barbershop</div>
+        <div class="user-info">Đăng Nhập</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="/Admin/Home/Index">Trang Chủ</a></li>
+                <li><a href="/Admin/SanPham/Index">QL Sản Phẩm</a></li>
+                <li><a href="/Admin/DichVu/Index">QL Dịch Vụ</a></li>
+                <li><a href="/Admin/LichHen/Index">Đặt lịch</a></li>
+                <li><a href="/Admin/DonHang/Index">Đơn Hàng</a></li>
+            </ul>
+        </aside>
+
+        @RenderBody()
+
+    </div>
+
+    <script>
+     $(document).ready(function () {
+         var toastMessage = '@TempData["ToastMessage"]';
+
+         if (toastMessage) {
+             var parts = toastMessage.split('|');
+             if (parts.length === 2) {
+                 var toastType = parts[0];
+                 var message = parts[1];
+
+                 // Cấu hình toastr
+                 toastr.options = {
+                     "positionClass": "toast-top-right", // Vị trí góc trên bên phải
+                     "timeOut": "5000", // Thời gian hiển thị thông báo
+                     "extendedTimeOut": "1000", // Thời gian hiển thị khi hover chuột
+                     "closeButton": true, // Hiển thị nút đóng
+                     "preventDuplicates": true // Ngăn trùng lặp thông báo
+                 };
+
+                 switch (toastType) {
+                     case 'success':
+                         toastr.success(message);
+                         break;
+                     case 'error':
+                         toastr.error(message);
+                         break;
+                     case 'info':
+                         toastr.info(message);
+                         break;
+                     case 'warning':
+                         toastr.warning(message);
+                         break;
+                 }
+             }
+         }
+     });
+    </script>
+</body>

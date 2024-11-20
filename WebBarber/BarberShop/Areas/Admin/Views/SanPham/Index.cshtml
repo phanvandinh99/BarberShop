@@ -1,0 +1,43 @@
+﻿@using BarberShop.Models
+@model List<SanPham>
+@{
+    ViewBag.Title = "Quản Lý Sản Phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main class="content">
+    <h1>Danh sách Sản Phẩm</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Hình Ảnh</th>
+                <th>Mã Sản Phẩm</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá Bán</th>
+                <th>Kho</th>
+                <th>Đã Bán</th>
+                <th>Loại</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img class="pic" src="~/Images/@item.HinhAnh" style="width: 80px; height: 80px;" />
+                    </td>
+                    <td>@item.MaSanPham</td>
+                    <td>@item.TenSanPham</td>
+                    <td>@string.Format("{0:0,0}", item.GiaBan) vnđ</td>
+                    <td>@item.SoLuong</td>
+                    <td>@item.DaBan</td>
+                    <td>@item.LoaiSanPham.TenLoaiSanPham</td>
+                    <td>
+                        <button class="btn">Xem</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

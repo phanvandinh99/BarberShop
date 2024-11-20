@@ -33,7 +33,7 @@ namespace BarberShop.Models
         public string SDT { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? NgayGiao { get; set; }
+        public DateTime NgayGiao { get; set; }
 
         public double TongTien { get; set; }
 

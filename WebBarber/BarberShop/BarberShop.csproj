@@ -128,6 +128,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DangNhapController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DichVuController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DonHangController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LichHenController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
     <Compile Include="Areas\Customer\Controllers\DangNhapController.cs" />
     <Compile Include="Areas\Customer\Controllers\DatLichController.cs" />
     <Compile Include="Areas\Customer\Controllers\DichVuController.cs" />
@@ -185,6 +191,7 @@
     <Content Include="Images\Wax-1.jpg" />
     <Content Include="Areas\Customer\Views\web.config" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Styles\Admin\style.css" />
     <Content Include="Styles\Product.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />
@@ -211,8 +218,6 @@
     <Content Include="Views\Home\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +236,13 @@
     <Content Include="Areas\Customer\Views\DatLich\XemLichHen.cshtml" />
     <Content Include="Areas\Customer\Views\DatLich\XemChiTiet.cshtml" />
     <Content Include="Areas\Customer\Views\DangNhap\DangKi.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DangNhap\DangNhap.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DichVu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\LichHen\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DonHang\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

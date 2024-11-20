@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Nhập - BarberShop</title>
+
+    <style>
+        /* Cài đặt kiểu dáng cho body */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Container chứa form đăng nhập */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Form đăng nhập */
+        .login-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+            /* Tên BarberShop */
+            .login-box h2 {
+                margin-bottom: 20px;
+                font-size: 30px;
+                color: #333;
+            }
+
+        /* Nhóm các input */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+            /* Label của các input */
+            .input-group label {
+                font-size: 14px;
+                color: #666;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            /* Các input */
+            .input-group input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+                /* Khi input focus */
+                .input-group input:focus {
+                    border-color: #4CAF50;
+                }
+
+        /* Nút đăng nhập */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            /* Hiệu ứng khi di chuột vào nút */
+            .btn:hover {
+                background-color: #45a049;
+            }
+
+        /* Responsive */
+        media (max-width: 480px) {
+            .login-box
+
+        {
+            padding: 20px;
+            width: 90%;
+        }
+
+        .login-box h2 {
+            font-size: 24px;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>BarberShop</h2>
+            @using (Ajax.BeginForm("DangNhap", "DangNhap", new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+
+                <div class="input-group">
+                    <label for="username">Tài Khoản</label>
+                    <input type="text" id="username" name="txtTaiKhoan" placeholder="Tên đăng nhập..." required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Mật Khẩu</label>
+                    <input type="password" id="password" name="txtMatKhau" placeholder="******" required>
+                </div>
+                <button type="submit" class="btn">Đăng Nhập</button>
+            }
+        </div>
+    </div>
+</body>
+</html>
+

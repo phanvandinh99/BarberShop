@@ -1,0 +1,58 @@
+﻿@using BarberShop.Models
+@model List<DonHang>
+@{
+    ViewBag.Title = "Quản Lý Đơn Hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main class="content">
+    <h1>Danh sách Đơn Hàng</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Đơn Hàng</th>
+                <th>Người Nhận</th>
+                <th>Ngày Đặt</th>
+                <th>Ngày Giao</th>
+                <th>Tổng Tiền</th>
+                <th>Trạng Thái</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaDonHang</td>
+                    <td>@item.TenNguoiNhan</td>
+                    <td>@item.NgayDat.ToString("dd/MM/yyyy")</td>
+                    <td>@item.NgayGiao.ToString("dd/MM/yyyy")</td>
+                    <td>@string.Format("{0:0,0}", item.TongTien) vnđ</td>
+                    <td>
+                        @switch (item.TrangThai)
+                        {
+                            case 0: // Đang xử lý
+                                <span class="badge bg-warning">Đang Xử Lý</span>;
+                                break;
+                            case 1: // Đang giao
+                                <span class="badge bg-success">Đang Giao</span>;
+                                break;
+                            case 2: // Đã giao
+                                <span class="badge bg-success">Đã Giao</span>;
+                                break;
+                            case 3: // Đã hủy
+                                <span class="badge bg-danger">Đã Hủy</span>;
+                                break;
+                            default:
+                                <span class="badge bg-secondary">Không Rõ</span>;
+                                break;
+                        }
+                    </td>
+                    <td>
+                        <button class="btn">Xem</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

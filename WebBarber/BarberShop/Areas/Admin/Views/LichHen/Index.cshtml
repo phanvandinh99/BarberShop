@@ -1,0 +1,47 @@
+﻿@using BarberShop.Models
+@model List<LichHen>
+@{
+    ViewBag.Title = "Quản Lý Lịch Hẹn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main class="content">
+    <h1>Danh sách Lịch Hẹn</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Lịch Hẹn</th>
+                <th>SDT</th>
+                <th>Họ Tên</th>
+                <th>Thời Gian</th>
+                <th>Tổng Tiền</th>
+                <th>Trạng Thái</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaLichHen</td>
+                    <td>@item.SDT</td>
+                    <td>@item.HoTen</td>
+                    <td>@item.ThoiGianDat</td>
+                    <td>@string.Format("{0:0,0}", item.TongTien) vnđ</td>
+                    <td>
+                        @switch (item.TrangThai)
+                        {
+                            case 0:<span class="badge bg-warning">Đang Hẹn</span>; break;
+                            case 1: <span class="badge bg-info">Đã Dùng</span>; break;
+                            case 2: <span class="badge bg-success">Đã Hủy</span>; break;
+                            default: <span class="badge bg-secondary">Không Rõ</span>; break;
+                        }
+                    </td>
+                    <td>
+                        <button class="btn">Xem</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
